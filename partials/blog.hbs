@@ -1,0 +1,8 @@
+<h2>Blog</h2>
+{{#each blogPosts}}
+    <article>
+        <h3>{{title}}</h3>
+        <p>Fecha:<time datetime="{{date}}">{{formattedDate}}</time></p>
+        <p>{{content}}</p>
+    </article>
+{{/each}}

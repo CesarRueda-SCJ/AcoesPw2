@@ -1,0 +1,77 @@
+// Estilos generales
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+  margin: 0; /* Agregado para quitar el margen predeterminado del cuerpo */
+}
+
+.container {
+  max-width: 800px; /* Puedes ajustar el ancho máximo según tus preferencias */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+// Estilos para el encabezado
+header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px 0;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+// Estilos para la lista de publicaciones del blog
+.blog-posts {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 40px;
+
+    article {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      h3 {
+        color: #3498db;
+      }
+
+      p {
+        color: #555;
+      }
+
+      time {
+        color: #777;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .blog-posts li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}

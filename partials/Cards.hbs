@@ -1,0 +1,14 @@
+<h2>Blog</h2>
+<section class="cards">
+	{{#each card}}
+		<div class="cards_container">
+			<div class="cards_image">
+				<img src={{urlImg}} alt={{alt}} />
+			</div>
+			<div class="cards_info">
+				<h3>{{titulo}}</h3>
+				<p>{{parrafo}}</p>
+			</div>
+		</div>
+	{{/each}}
+</section>

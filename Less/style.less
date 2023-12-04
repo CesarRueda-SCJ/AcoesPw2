@@ -1,0 +1,27 @@
+@primary-bg-color: #f5f5f5;
+@primary-tx-color: #ffffff;
+@secondary-bg-color: #019fdf;
+@secondary-tx-color: #000000;
+@color-form: #ffe6a2;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import "helpers.less";
+
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	.no-padding-margin();
+	height: 100%;
+	background-color: @primary-bg-color;
+}
+
+@import "header.less";
+@import "footer.less";
+@import "blog.less";
+@import "card.less";
+// Eventos
+@import "./Eventos/events.less";

@@ -1,0 +1,25 @@
+.eventos_Container {
+  h2 {
+    .titulos();
+  }
+
+  width: 100%;
+  .flexing();
+  flex-direction: column;
+
+  ul {
+    text-align: center;
+    .no-padding-margin();
+
+    @media screen and (min-width: 480px) {
+      width: 80%;
+      .flexing();
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    li {
+      .button();
+    }
+  }
+}

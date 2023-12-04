@@ -1,0 +1,32 @@
+<h2>Eventos Pasados</h2>
+<section class="cards">
+    {{#each eventspasados}}
+        <div class="cards_container">
+            <div class="cards_image">
+                <img src="{{urlImg}}" alt="{{alt}}" />
+            </div>
+            <div class="cards_info">
+                <h3>{{name}}</h3>
+                <p>Fecha: <time>{{formattedDate}}</time></p>
+                <p>Lugar: {{location}}</p>
+                <p>{{description}}</p>
+            </div>
+        </div>
+    {{/each}}
+</section>
+<h2>Eventos Futuros</h2>
+<section class="cards">
+    {{#each eventsFuturos}}
+        <div class="cards_container">
+            <div class="cards_image">
+                <img src="{{urlImg}}" alt="{{alt}}" />
+            </div>
+            <div class="cards_info">
+                <h3>{{name}}</h3>
+                <p>Fecha: <time>{{formattedDate}}</time></p>
+                <p>Lugar: {{location}}</p>
+                <p>{{description}}</p>
+            </div>
+        </div>
+    {{/each}}
+</section>
